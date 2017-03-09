@@ -1,0 +1,12 @@
+services:
+  ymc_emoji.provider:
+    class: YMC\EmojiBundle\Service\Emoji
+    arguments:
+      - '%ymc_emoji.definition_file%'
+
+  ymc_emoji.twig_extension:
+    class: YMC\EmojiBundle\Twig\EmojiExtension
+    arguments: ['@ymc_emoji.provider']
+    public: false
+    tags:
+      - { name: twig.extension }

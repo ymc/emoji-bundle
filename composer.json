@@ -1,0 +1,12 @@
+{
+    "name": "ymc/emoji-bundle",
+    "version": "1.0.0",
+    "type": "library",
+    "require": {
+        "php": ">=7",
+        "symfony/framework-bundle": "^2.7 || ^3.2"
+    },
+    "autoload": {
+        "psr-4": {"YMC\\EmojiBundle\\": "src/"}
+    }
+}
